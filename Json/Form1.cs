@@ -12,10 +12,16 @@ namespace Json
 {
     public partial class Form1 : Form
     {
+        FileSelector fileSelector;
         public Form1()
         {
             InitializeComponent();
+            fileSelector = new FileSelector();
         }
 
+        private void btnP1SelectFile_Click(object sender, EventArgs e)
+        {
+            fileSelector.selectFile();
+        }
     }
 }
