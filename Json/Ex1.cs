@@ -14,14 +14,23 @@ namespace Json
 
         public DataTable getProfStandarts(JObject json)
         {
-            var profStandarts = json["content"]["section4"]["professionalStandards"].Select(p => p["content"].Value<string>());
+            var profStandarts = json["content"]["appendix2"]["profStandart"]["professionalArea"].Select(p => new
+            {
+                code = p["code"].Value<string>(),
+                name = p["title"].Value<string>()
+            });
 
             var dt = new DataTable();
-            dt.Columns.Add("column1");
+            dt.Columns.Add("Код");
+            dt.Columns.Add("Название");
 
             foreach (var item in profStandarts)
             {
-                dt.Rows.Add(item);
+
+                dt.Rows.Add(new object[] {
+                    item.code,
+                    item.name
+                });
             }
 
             return dt;
