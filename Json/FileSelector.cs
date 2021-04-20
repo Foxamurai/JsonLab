@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Json
@@ -6,7 +8,7 @@ namespace Json
     class FileSelector
     {
         private OpenFileDialog openFileDialog;
-        private string fileContent;
+        private JObject content;
         private string filePath;
 
         public FileSelector()
@@ -27,9 +29,10 @@ namespace Json
                 //Read the contents of the file into a stream
                 var fileStream = openFileDialog.OpenFile();
 
-                using (StreamReader reader = new StreamReader(fileStream))
+                using (StreamReader streamReader = new StreamReader(fileStream))
                 {
-                    fileContent = reader.ReadToEnd();
+                    var reader = new JsonTextReader(streamReader);
+                    content = JObject.Load(reader);
                 }
             }
         }
@@ -38,10 +41,11 @@ namespace Json
             return filePath;
         }
 
-        public string getFileContent()
+        public JObject getContent()
         {
-            return fileContent;
+            return content;
         }
 
+        
     }
 }

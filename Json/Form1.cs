@@ -22,6 +22,12 @@ namespace Json
         private void btnP1SelectFile_Click(object sender, EventArgs e)
         {
             fileSelector.selectFile();
+            tbP1filePath.Text = fileSelector.getFilePath();
+        }
+
+        private void btnP1Ex1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = new Ex1().getProfStandarts(fileSelector.getContent());
         }
     }
 }
