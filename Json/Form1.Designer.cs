@@ -36,6 +36,10 @@ namespace Json
             this.btnP1Ex1 = new System.Windows.Forms.Button();
             this.btnP1Ex2 = new System.Windows.Forms.Button();
             this.cbP1Ex2 = new System.Windows.Forms.ComboBox();
+            this.btnP1Ex3 = new System.Windows.Forms.Button();
+            this.cbP1Ex3 = new System.Windows.Forms.ComboBox();
+            this.btnP1Ex4 = new System.Windows.Forms.Button();
+            this.cbP1Ex4 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
@@ -76,6 +80,7 @@ namespace Json
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(2, 2);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
@@ -98,11 +103,15 @@ namespace Json
             this.flowLayoutPanel1.Controls.Add(this.btnP1Ex1);
             this.flowLayoutPanel1.Controls.Add(this.btnP1Ex2);
             this.flowLayoutPanel1.Controls.Add(this.cbP1Ex2);
+            this.flowLayoutPanel1.Controls.Add(this.btnP1Ex3);
+            this.flowLayoutPanel1.Controls.Add(this.cbP1Ex3);
+            this.flowLayoutPanel1.Controls.Add(this.btnP1Ex4);
+            this.flowLayoutPanel1.Controls.Add(this.cbP1Ex4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(325, 120);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(325, 263);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnP1Ex1
@@ -131,8 +140,44 @@ namespace Json
             this.cbP1Ex2.FormattingEnabled = true;
             this.cbP1Ex2.Location = new System.Drawing.Point(172, 37);
             this.cbP1Ex2.Name = "cbP1Ex2";
-            this.cbP1Ex2.Size = new System.Drawing.Size(145, 28);
+            this.cbP1Ex2.Size = new System.Drawing.Size(150, 28);
             this.cbP1Ex2.TabIndex = 2;
+            // 
+            // btnP1Ex3
+            // 
+            this.btnP1Ex3.Location = new System.Drawing.Point(3, 72);
+            this.btnP1Ex3.Name = "btnP1Ex3";
+            this.btnP1Ex3.Size = new System.Drawing.Size(162, 29);
+            this.btnP1Ex3.TabIndex = 3;
+            this.btnP1Ex3.Text = "3";
+            this.btnP1Ex3.UseVisualStyleBackColor = true;
+            this.btnP1Ex3.Click += new System.EventHandler(this.btnP1Ex3_Click);
+            // 
+            // cbP1Ex3
+            // 
+            this.cbP1Ex3.FormattingEnabled = true;
+            this.cbP1Ex3.Location = new System.Drawing.Point(171, 72);
+            this.cbP1Ex3.Name = "cbP1Ex3";
+            this.cbP1Ex3.Size = new System.Drawing.Size(151, 28);
+            this.cbP1Ex3.TabIndex = 4;
+            // 
+            // btnP1Ex4
+            // 
+            this.btnP1Ex4.Location = new System.Drawing.Point(3, 107);
+            this.btnP1Ex4.Name = "btnP1Ex4";
+            this.btnP1Ex4.Size = new System.Drawing.Size(162, 29);
+            this.btnP1Ex4.TabIndex = 5;
+            this.btnP1Ex4.Text = "4";
+            this.btnP1Ex4.UseVisualStyleBackColor = true;
+            this.btnP1Ex4.Click += new System.EventHandler(this.btnP1Ex4_Click);
+            // 
+            // cbP1Ex4
+            // 
+            this.cbP1Ex4.FormattingEnabled = true;
+            this.cbP1Ex4.Location = new System.Drawing.Point(171, 107);
+            this.cbP1Ex4.Name = "cbP1Ex4";
+            this.cbP1Ex4.Size = new System.Drawing.Size(151, 28);
+            this.cbP1Ex4.TabIndex = 6;
             // 
             // dataGridView1
             // 
@@ -196,6 +241,12 @@ namespace Json
         private System.Windows.Forms.Button btnP1;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.ComboBox cbP1Ex2;
+        private System.Windows.Forms.Button btnP1Ex3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbP1Ex3;
+        private System.Windows.Forms.Button btnP1Ex4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbP1Ex4;
     }
 }
 

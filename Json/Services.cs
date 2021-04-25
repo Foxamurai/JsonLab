@@ -10,7 +10,8 @@ namespace Json
     class Services
     {        
 
-        public string[] getCompetenciesEx2(JObject json) {
+        public string[] getCompetenciesEx2(JObject json) 
+        {
             var universalCompetencyRows = json["content"]["section4"]["universalCompetencyRows"];
             var cometencies = new List<string>();
             foreach (var item in universalCompetencyRows)
@@ -25,6 +26,11 @@ namespace Json
             }
 
             return cometencies.ToArray();
+        }
+
+        public string[] getSubjectsEx3(JObject json)
+        {
+            return json["content"]["section5"]["eduPlan"]["block1"]["subrows"].Select(s => s["title"].Value<string>()).ToArray();
         }
 
 
