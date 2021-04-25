@@ -42,6 +42,8 @@ namespace Json
             this.cbP1Ex4 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnP1Ex5 = new System.Windows.Forms.Button();
+            this.cbP1Ex5 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -107,6 +109,8 @@ namespace Json
             this.flowLayoutPanel1.Controls.Add(this.cbP1Ex3);
             this.flowLayoutPanel1.Controls.Add(this.btnP1Ex4);
             this.flowLayoutPanel1.Controls.Add(this.cbP1Ex4);
+            this.flowLayoutPanel1.Controls.Add(this.btnP1Ex5);
+            this.flowLayoutPanel1.Controls.Add(this.cbP1Ex5);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -206,6 +210,24 @@ namespace Json
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnP1Ex5
+            // 
+            this.btnP1Ex5.Location = new System.Drawing.Point(3, 142);
+            this.btnP1Ex5.Name = "btnP1Ex5";
+            this.btnP1Ex5.Size = new System.Drawing.Size(162, 29);
+            this.btnP1Ex5.TabIndex = 7;
+            this.btnP1Ex5.Text = "5";
+            this.btnP1Ex5.UseVisualStyleBackColor = true;
+            this.btnP1Ex5.Click += new System.EventHandler(this.btnP1Ex5_Click);
+            // 
+            // cbP1Ex5
+            // 
+            this.cbP1Ex5.FormattingEnabled = true;
+            this.cbP1Ex5.Location = new System.Drawing.Point(171, 142);
+            this.cbP1Ex5.Name = "cbP1Ex5";
+            this.cbP1Ex5.Size = new System.Drawing.Size(151, 28);
+            this.cbP1Ex5.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -247,6 +269,8 @@ namespace Json
         private System.Windows.Forms.Button btnP1Ex4;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox cbP1Ex4;
+        private System.Windows.Forms.Button btnP1Ex5;
+        private System.Windows.Forms.ComboBox cbP1Ex5;
     }
 }
 
